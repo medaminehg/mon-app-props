@@ -7,14 +7,19 @@ import Btn from './profile/Btn';
   name:"Amin",
   email:"amin@gmail.com",
   phone:123654
+  
  }
+ const display = () => {
+  alert('HEllo  '+Persons.name)
+}
 function App() {
   return (
     <div className="App">
-      <Profile Persons={Persons} >
+      <Profile Persons={Persons}display={display} >
       <img src={hero1} style={{"height":"300px","width":"300px"}} />
-      <Btn Persons={Persons} />
+     
       </Profile>
+
     </div>
   );
 }
